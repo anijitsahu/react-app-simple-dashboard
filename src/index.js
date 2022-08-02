@@ -1,7 +1,9 @@
 // import the render
-import { render } from "react-dom"
+import { createRoot } from "react-dom/client";
+
+import "./icons/favicon.ico";
 
 // the actual App component
-import App from "./App"
+import App from "./App";
 
-render(<App />, document.getElementById("app"))
+createRoot(document.getElementById("app")).render(<App />);
