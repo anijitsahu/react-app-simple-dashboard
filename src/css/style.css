@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-small: 10px;
+  --font-regular: 16px;
+  --font-family: "Roboto", sans-serif;
+
+  --font-weight-regular: 300;
+  --font-weight-dark: 700;
+
+  --darker-grey: #aaa;
+  --dark-grey: #ccc;
+  --light-grey: #eee;
+  --lighter-grey: #fff;
+
+  --light-purple: #ab14ab;
+  --lighter-purple: #dd65dd;
+
+  --light-shadow: rgba(0, 0, 0, 0.4);
+  --lighter-shadow: rgba(0, 0, 0, 0.2);
+}
+
+html {
+  font-size: var(--font-regular);
+  font-family: var(--font-family);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+
+  border: solid 1px var(--dark-grey);
+  box-shadow: 3px 5px 22px var(--light-shadow);
+}
+
+.header {
+  display: grid;
+  background-color: var(--light-purple);
+  color: var(--lighter-grey);
+
+  grid-template-columns: 1fr;
+  padding: 1em;
+}
+
+/* title of the application related */
+.title {
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+}
+
+.bold-title {
+  font-weight: var(--font-weight-dark);
+}
+
+input[type="text"] {
+  padding: 1.9em;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+}
+
+/* content div related */
+.content-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Charts related */
+.chart-container {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.chart-type-div {
+  justify-self: end;
+}
+
+.chart-type {
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+.active-chart-type {
+  color: var(--light-purple);
+}
+
+.chart-type:hover {
+  color: var(--light-purple);
+  cursor: pointer;
+}
+
+.separator {
+  color: var(--darker-grey);
+}
+
+.basic-padding {
+  padding: 1em;
+}
+
+/* Viewers Panel related */
+.viewers-panel {
+  border-right: solid 1px var(--light-grey);
+}
+
+.viewers-panel-title {
+  text-align: center;
+}
+
+.view-distribution {
+  margin: 10px;
+}
+
+.change-count {
+  display: grid;
+  align-items: center;
+  font-size: 0.9em;
+  grid-template-columns: 1fr auto;
+}
+
+/* scroll bar related */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+/* Input type range related */
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  height: 10px;
+  width: 5px;
+  background: var(--light-purple);
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 10px;
+  width: 5px;
+  border: solid 1px var(--light-purple);
+  background: var(--light-purple);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: var(--lighter-purple);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  background: var(--lighter-purple);
+}
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: var(--font-small);
+  }
+  .content-div {
+    grid-template-columns: 1fr;
+  }
+  .viewers-panel {
+    border-bottom: solid 1px var(--light-grey);
+  }
+}
