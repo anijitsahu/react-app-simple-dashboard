@@ -1,0 +1,52 @@
+/* Charts related */
+.chart-container {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.chart-type-div {
+  justify-self: end;
+}
+
+.chart-type {
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+.active-chart-type {
+  color: var(--light-purple);
+}
+
+.chart-type:hover {
+  color: var(--light-purple);
+  cursor: pointer;
+}
+
+.separator {
+  color: var(--darker-grey);
+}
+
+.basic-padding {
+  padding: 1em;
+}
+
+/* Viewers Panel related */
+.viewers-panel {
+  border-right: solid 1px var(--light-grey);
+}
+
+.viewers-panel-title {
+  text-align: center;
+}
+
+.view-distribution {
+  margin: 10px;
+}
+
+.change-count {
+  display: grid;
+  align-items: center;
+  font-size: 0.9em;
+  grid-template-columns: 1fr auto;
+}

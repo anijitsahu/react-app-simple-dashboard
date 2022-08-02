@@ -76,17 +76,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
 /* harmony import */ var _charts_ChartPanel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./charts/ChartPanel */ "./src/components/charts/ChartPanel.js");
 /* harmony import */ var _viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./viewers/ViewersPanel */ "./src/components/viewers/ViewersPanel.js");
 /* harmony import */ var _Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Constants */ "./src/components/Constants.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _css_charts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/charts.css */ "./src/css/charts.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // dependencies
 
  // components
 
 
  // constants
+
+ // css
 
 
 
@@ -99,7 +102,7 @@ const Content = () => {
   const [chartData, setChartData] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     labels: allConstants.labels,
     data: allConstants.data,
-    id: (0,uuid__WEBPACK_IMPORTED_MODULE_5__["default"])()
+    id: (0,uuid__WEBPACK_IMPORTED_MODULE_6__["default"])()
   });
 
   const updateViewersCount = channelInfo => {
@@ -112,7 +115,7 @@ const Content = () => {
     setChartData({ ...chartData,
       labels,
       data,
-      id: (0,uuid__WEBPACK_IMPORTED_MODULE_5__["default"])()
+      id: (0,uuid__WEBPACK_IMPORTED_MODULE_6__["default"])()
     });
   };
 
@@ -121,11 +124,11 @@ const Content = () => {
     labels,
     id
   } = chartData;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "content-div",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__["default"], {
       updateViewersCount: updateViewersCount
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_charts_ChartPanel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_charts_ChartPanel__WEBPACK_IMPORTED_MODULE_1__["default"], {
       data: data,
       labels: labels,
       id: id
@@ -14002,6 +14005,32 @@ function styleChanged(style, prevStyle) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/charts.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/charts.css ***!
+  \******************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "/* Charts related */\n.chart-container {\n  text-transform: capitalize;\n  display: grid;\n  grid-template-rows: auto 1fr;\n}\n\n.chart-type-div {\n  justify-self: end;\n}\n\n.chart-type {\n  font-size: 0.6em;\n  text-transform: uppercase;\n}\n\n.active-chart-type {\n  color: var(--light-purple);\n}\n\n.chart-type:hover {\n  color: var(--light-purple);\n  cursor: pointer;\n}\n\n.separator {\n  color: var(--darker-grey);\n}\n\n.basic-padding {\n  padding: 1em;\n}\n\n/* Viewers Panel related */\n.viewers-panel {\n  border-right: solid 1px var(--light-grey);\n}\n\n.viewers-panel-title {\n  text-align: center;\n}\n\n.view-distribution {\n  margin: 10px;\n}\n\n.change-count {\n  display: grid;\n  align-items: center;\n  font-size: 0.9em;\n  grid-template-columns: 1fr auto;\n}\n", "",{"version":3,"sources":["webpack://./src/css/charts.css"],"names":[],"mappings":"AAAA,mBAAmB;AACnB;EACE,0BAA0B;EAC1B,aAAa;EACb,4BAA4B;AAC9B;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,0BAA0B;EAC1B,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA,0BAA0B;AAC1B;EACE,yCAAyC;AAC3C;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,+BAA+B;AACjC","sourcesContent":["/* Charts related */\n.chart-container {\n  text-transform: capitalize;\n  display: grid;\n  grid-template-rows: auto 1fr;\n}\n\n.chart-type-div {\n  justify-self: end;\n}\n\n.chart-type {\n  font-size: 0.6em;\n  text-transform: uppercase;\n}\n\n.active-chart-type {\n  color: var(--light-purple);\n}\n\n.chart-type:hover {\n  color: var(--light-purple);\n  cursor: pointer;\n}\n\n.separator {\n  color: var(--darker-grey);\n}\n\n.basic-padding {\n  padding: 1em;\n}\n\n/* Viewers Panel related */\n.viewers-panel {\n  border-right: solid 1px var(--light-grey);\n}\n\n.viewers-panel-title {\n  text-align: center;\n}\n\n.view-distribution {\n  margin: 10px;\n}\n\n.change-count {\n  display: grid;\n  align-items: center;\n  font-size: 0.9em;\n  grid-template-columns: 1fr auto;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
 /*!*****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
@@ -14020,9 +14049,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* Charts related */\n.chart-container {\n  text-transform: capitalize;\n  display: grid;\n  grid-template-rows: auto 1fr;\n}\n\n.chart-type-div {\n  justify-self: end;\n}\n\n.chart-type {\n  font-size: 0.6em;\n  text-transform: uppercase;\n}\n\n.active-chart-type {\n  color: var(--light-purple);\n}\n\n.chart-type:hover {\n  color: var(--light-purple);\n  cursor: pointer;\n}\n\n.separator {\n  color: var(--darker-grey);\n}\n\n.basic-padding {\n  padding: 1em;\n}\n\n/* Viewers Panel related */\n.viewers-panel {\n  border-right: solid 1px var(--light-grey);\n}\n\n.viewers-panel-title {\n  text-align: center;\n}\n\n.view-distribution {\n  margin: 10px;\n}\n\n.change-count {\n  display: grid;\n  align-items: center;\n  font-size: 0.9em;\n  grid-template-columns: 1fr auto;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,mCAAmC;;EAEnC,0BAA0B;EAC1B,uBAAuB;;EAEvB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;EACvB,yBAAyB;;EAEzB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,0BAA0B;EAC1B,UAAU;;EAEV,kCAAkC;EAClC,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,0BAA0B;;EAE1B,0BAA0B;EAC1B,YAAY;AACd;;AAEA,qCAAqC;AACrC;EACE,uCAAuC;EACvC,yBAAyB;AAC3B;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA,mBAAmB;AACnB;EACE,0BAA0B;EAC1B,aAAa;EACb,4BAA4B;AAC9B;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,yBAAyB;AAC3B;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,0BAA0B;EAC1B,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,YAAY;AACd;;AAEA,0BAA0B;AAC1B;EACE,yCAAyC;AAC3C;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,+BAA+B;AACjC;;AAEA,uBAAuB;AACvB;EACE,WAAW;AACb;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA,6BAA6B;AAC7B;EACE,wBAAwB,EAAE,uDAAuD;EACjF,WAAW,EAAE,4CAA4C;EACzD,uBAAuB,EAAE,8BAA8B;AACzD;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa,EAAE,iHAAiH;AAClI;;AAEA,qCAAqC;AACrC;EACE,YAAY;EACZ,UAAU;EACV,+BAA+B;EAC/B,eAAe;EACf,gBAAgB;AAClB;;AAEA,mCAAmC;AACnC;EACE,YAAY;EACZ,UAAU;EACV,qCAAqC;EACrC,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,0BAA0B;EAC5B;EACA;IACE,0CAA0C;EAC5C;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Roboto:300,400,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* Charts related */\n.chart-container {\n  text-transform: capitalize;\n  display: grid;\n  grid-template-rows: auto 1fr;\n}\n\n.chart-type-div {\n  justify-self: end;\n}\n\n.chart-type {\n  font-size: 0.6em;\n  text-transform: uppercase;\n}\n\n.active-chart-type {\n  color: var(--light-purple);\n}\n\n.chart-type:hover {\n  color: var(--light-purple);\n  cursor: pointer;\n}\n\n.separator {\n  color: var(--darker-grey);\n}\n\n.basic-padding {\n  padding: 1em;\n}\n\n/* Viewers Panel related */\n.viewers-panel {\n  border-right: solid 1px var(--light-grey);\n}\n\n.viewers-panel-title {\n  text-align: center;\n}\n\n.view-distribution {\n  margin: 10px;\n}\n\n.change-count {\n  display: grid;\n  align-items: center;\n  font-size: 0.9em;\n  grid-template-columns: 1fr auto;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,oCAAoC;;EAEpC,0BAA0B;EAC1B,uBAAuB;;EAEvB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;EACvB,yBAAyB;;EAEzB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,0BAA0B;EAC1B,UAAU;;EAEV,kCAAkC;EAClC,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,0BAA0B;;EAE1B,0BAA0B;EAC1B,YAAY;AACd;;AAEA,qCAAqC;AACrC;EACE,uCAAuC;EACvC,yBAAyB;AAC3B;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA,uBAAuB;AACvB;EACE,WAAW;AACb;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA,6BAA6B;AAC7B;EACE,wBAAwB,EAAE,uDAAuD;EACjF,WAAW,EAAE,4CAA4C;EACzD,uBAAuB,EAAE,8BAA8B;AACzD;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa,EAAE,iHAAiH;AAClI;;AAEA,qCAAqC;AACrC;EACE,YAAY;EACZ,UAAU;EACV,+BAA+B;EAC/B,eAAe;EACf,gBAAgB;AAClB;;AAEA,mCAAmC;AACnC;EACE,YAAY;EACZ,UAAU;EACV,qCAAqC;EACrC,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,0BAA0B;EAC5B;EACA;IACE,0CAA0C;EAC5C;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -49084,6 +49113,60 @@ if (
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./src/css/charts.css":
+/*!****************************!*\
+  !*** ./src/css/charts.css ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_charts_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./charts.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/charts.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_charts_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_charts_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_charts_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_charts_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 :root {
   --font-small: 10px;
   --font-regular: 16px;
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Poppins", sans-serif;
 
   --font-weight-regular: 300;
   --font-weight-dark: 700;
@@ -69,59 +69,6 @@ input[type="text"] {
 .content-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-/* Charts related */
-.chart-container {
-  text-transform: capitalize;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-.chart-type-div {
-  justify-self: end;
-}
-
-.chart-type {
-  font-size: 0.6em;
-  text-transform: uppercase;
-}
-
-.active-chart-type {
-  color: var(--light-purple);
-}
-
-.chart-type:hover {
-  color: var(--light-purple);
-  cursor: pointer;
-}
-
-.separator {
-  color: var(--darker-grey);
-}
-
-.basic-padding {
-  padding: 1em;
-}
-
-/* Viewers Panel related */
-.viewers-panel {
-  border-right: solid 1px var(--light-grey);
-}
-
-.viewers-panel-title {
-  text-align: center;
-}
-
-.view-distribution {
-  margin: 10px;
-}
-
-.change-count {
-  display: grid;
-  align-items: center;
-  font-size: 0.9em;
-  grid-template-columns: 1fr auto;
 }
 
 /* scroll bar related */
