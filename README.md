@@ -1,6 +1,6 @@
-# react-app-simple-charts-app
+# react-app-simple-dashboard-page
 
-A Simple Charts Application using [React JS](https://reactjs.org/docs/getting-started.html), a JavaScript library to make awesome UI by Facebook and [Chart JS](https://www.npmjs.com/package/react-chartjs-2) for plotting charts.
+A Simple Dashboard page using [React JS](https://reactjs.org/docs/getting-started.html), a JavaScript library to make awesome UI by Facebook and [Chart JS](https://www.npmjs.com/package/react-chartjs-2) for plotting charts.
 
 This application uses [React JS](https://reactjs.org/docs/getting-started.html) component oriented UI creation paradigm. All components are written in [JSX](https://reactjs.org/docs/jsx-in-depth.html) and ES6 style and are
 combined to get a single build for production purpose using [Webpack 5](https://webpack.js.org/concepts/).
@@ -22,7 +22,7 @@ This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
 <br/>
 
-5.   This is a Simple Chart Application
+5.   This is a Simple Dashboard page Application
 6.  Charts are plotted using [Chart JS](https://www.npmjs.com/package/react-chartjs-2)
 7.   Charts are upadated when user changes the hourly watching rate of channel viewing
 
@@ -36,11 +36,11 @@ This is a _responsive web application_ for viewing in both Mobile and Desktop.
 <br/>
 
 12. This is just a Simple Carousel program
-12.1. Next image can be seen by clicking `>` button
-12.2. Next button will not be shown when the last image is reached
+   - Next image can be seen by clicking `>` button
+   - Next button will not be shown when the last image is reached
 
 13. Previous image can be seen clicking `<` button
-13.1. While loading the first image previous button will not be there for obvious reason 
+   - While loading the first image previous button will not be there for obvious reason 
 
 
 14.   No database / storage is there. So no changes are _persistant_
@@ -50,14 +50,14 @@ This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
 Clone the repository:
 
-```
-git clone https://github.com/anijitsahu/react-app-simple-charts-app.git
+```bash
+$ git clone https://github.com/anijitsahu/react-app-simple-dashboard-page.git
 ```
 
 Navigate inside the directory:
 
-```
-cd react-app-simple-charts-app/dist
+```bash
+$ cd react-app-simple-dashboard-page/dist
 ```
 
 Open the `index.html` file in a web browser
