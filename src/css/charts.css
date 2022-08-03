@@ -1,5 +1,11 @@
 /* Charts related */
+
 .chart-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.charts-panel {
   text-transform: capitalize;
   display: grid;
   grid-template-rows: auto 1fr;

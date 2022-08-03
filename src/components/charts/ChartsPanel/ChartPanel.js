@@ -53,14 +53,14 @@ const ChartPanel = ({ data, labels, id }) => {
   const chartTypes = ["pie", "doughnut", "bar"];
 
   return (
-    <div className="chart-container basic-padding">
+    <article className="charts-panel basic-padding">
       <ShowChartTypes
         chartTypes={chartTypes}
         changeChartType={changeChartType}
         activeChart={activeChart}
       />
       <ShowChart chartData={chartData} chartType={chartType} />
-    </div>
+    </article>
   );
 };
 

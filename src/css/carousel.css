@@ -1,12 +1,5 @@
 /* carousel related css */
 
-.title {
-  background-color: var(--light-purple);
-  color: var(--lighter-grey);
-  padding: 1em;
-  grid-row: 1;
-}
-
 .carousel-container {
   padding: 1em;
   box-shadow: 0 2px 10px var(--lighter-shadow);

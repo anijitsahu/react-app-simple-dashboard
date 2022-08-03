@@ -39,9 +39,9 @@ const CarouselComponent = () => {
 
   const { active, total } = carouselData;
   return (
-    <div className="carousel-container">
+    <section className="carousel-container">
       <Carousel srcNumber={active} total={total} updateImage={updateImage} />
-    </div>
+    </section>
   );
 };
 

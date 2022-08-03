@@ -8,12 +8,12 @@ import ChartComponent from "./components/charts/ChartComponent";
 
 const App = () => {
   return (
-    <div className="container">
+    <main className="container">
       {/* including the Title and other components */}
       <Header />
       <CarouselComponent />
       <ChartComponent />
-    </div>
+    </main>
   );
 };
 

@@ -37,10 +37,10 @@ const ChartComponent = () => {
 
   const { data, labels, id } = chartData;
   return (
-    <div className="content-div">
+    <section className="chart-container">
       <ViewersPanel updateViewersCount={updateViewersCount} />
       <ChartPanel data={data} labels={labels} id={id} />
-    </div>
+    </section>
   );
 };
 
