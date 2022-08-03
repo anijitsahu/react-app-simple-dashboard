@@ -43,7 +43,11 @@
 }
 
 .viewers-panel-title {
-  text-align: center;
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--light-purple);
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 
 .view-distribution {

@@ -68,7 +68,6 @@ input[type="text"] {
 
 /* content div related */
 
-
 /* scroll bar related */
 ::-webkit-scrollbar {
   width: 10px;
@@ -130,7 +129,7 @@ input[type="range"]::-moz-range-track {
   html {
     font-size: var(--font-small);
   }
-  .content-div {
+  .charts-panel {
     grid-template-columns: 1fr;
   }
   .viewers-panel {
