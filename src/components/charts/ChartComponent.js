@@ -3,16 +3,16 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 // components
-import ChartPanel from "./charts/ChartPanel";
-import ViewersPanel from "./viewers/ViewersPanel";
+import ChartPanel from "./ChartPanel";
+import ViewersPanel from "../viewers/ViewersPanel";
 
 // constants
-import Constants from "./Constants";
+import Constants from "../Constants";
 
 // css
-import "../css/charts.css";
+import "../../css/charts.css";
 
-const Content = () => {
+const ChartComponent = () => {
   // initialize all the Constants
   const allConstants = Constants();
 
@@ -44,4 +44,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default ChartComponent;

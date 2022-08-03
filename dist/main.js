@@ -13,21 +13,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/layout/Header */ "./src/components/layout/Header.js");
-/* harmony import */ var _components_Content__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Content */ "./src/components/Content.js");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/styles.css */ "./src/css/styles.css");
+/* harmony import */ var _components_carousel_CarouselComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/carousel/CarouselComponent */ "./src/components/carousel/CarouselComponent.js");
+/* harmony import */ var _components_charts_ChartComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/charts/ChartComponent */ "./src/components/charts/ChartComponent.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // components
-
  // css
 
 
 
 
 
+
+
 const App = () => {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_layout_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Content__WEBPACK_IMPORTED_MODULE_1__["default"], {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_charts_ChartComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_carousel_CarouselComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 };
 
@@ -64,10 +66,159 @@ const Constants = () => {
 
 /***/ }),
 
-/***/ "./src/components/Content.js":
-/*!***********************************!*\
-  !*** ./src/components/Content.js ***!
-  \***********************************/
+/***/ "./src/components/carousel/Carousel.js":
+/*!*********************************************!*\
+  !*** ./src/components/carousel/Carousel.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navigation */ "./src/components/carousel/Navigation.js");
+/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/carousel.css */ "./src/css/carousel.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// Components
+ // css
+
+
+
+
+
+const Carousel = ({
+  updateImage,
+  srcNumber,
+  total
+}) => {
+  const src = `images/${srcNumber}.jpg`;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "carousel",
+    children: [srcNumber != 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      updateImage: updateImage,
+      position: "left"
+    }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: src,
+      className: "carousel-img"
+    }), srcNumber != total ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      updateImage: updateImage,
+      position: "right"
+    }) : null]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Carousel);
+
+/***/ }),
+
+/***/ "./src/components/carousel/CarouselComponent.js":
+/*!******************************************************!*\
+  !*** ./src/components/carousel/CarouselComponent.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./src/components/carousel/Carousel.js");
+/* harmony import */ var _images_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/1.jpg */ "./src/images/1.jpg");
+/* harmony import */ var _images_2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/2.jpg */ "./src/images/2.jpg");
+/* harmony import */ var _images_3_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/3.jpg */ "./src/images/3.jpg");
+/* harmony import */ var _images_4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/4.jpg */ "./src/images/4.jpg");
+/* harmony import */ var _images_5_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/5.jpg */ "./src/images/5.jpg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// dependencies
+ // Components
+
+ // images
+
+
+
+
+
+
+
+
+const CarouselComponent = () => {
+  const TOTAL_NUMBER_OF_IMAGES = 5; // initialize the initial state and its modifier function
+
+  const [carouselData, setCarouselData] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    active: 1,
+    total: TOTAL_NUMBER_OF_IMAGES
+  }); // update the image when the arrow is clicked
+
+  const updateImage = e => {
+    let {
+      id
+    } = e.target;
+    let {
+      active,
+      total
+    } = carouselData;
+
+    if (id == "left") {
+      active = active > 1 ? active - 1 : 1;
+    } else if (id == "right") {
+      active = active < total ? active + 1 : total;
+    }
+
+    setCarouselData({ ...carouselData,
+      active
+    });
+  };
+
+  const {
+    active,
+    total
+  } = carouselData;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+    className: "content",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      srcNumber: active,
+      total: total,
+      updateImage: updateImage
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CarouselComponent);
+
+/***/ }),
+
+/***/ "./src/components/carousel/Navigation.js":
+/*!***********************************************!*\
+  !*** ./src/components/carousel/Navigation.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+// Navigation component
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (({
+  updateImage,
+  position
+}) => {
+  const classStyle = position == "left" ? "fas fa-angle-left arrow" : "fas fa-angle-right arrow arrow-right";
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("i", {
+    id: position,
+    className: classStyle,
+    onClick: updateImage
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/charts/ChartComponent.js":
+/*!*************************************************!*\
+  !*** ./src/components/charts/ChartComponent.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -77,10 +228,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
-/* harmony import */ var _charts_ChartPanel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./charts/ChartPanel */ "./src/components/charts/ChartPanel.js");
-/* harmony import */ var _viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./viewers/ViewersPanel */ "./src/components/viewers/ViewersPanel.js");
-/* harmony import */ var _Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Constants */ "./src/components/Constants.js");
-/* harmony import */ var _css_charts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/charts.css */ "./src/css/charts.css");
+/* harmony import */ var _ChartPanel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChartPanel */ "./src/components/charts/ChartPanel.js");
+/* harmony import */ var _viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../viewers/ViewersPanel */ "./src/components/viewers/ViewersPanel.js");
+/* harmony import */ var _Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Constants */ "./src/components/Constants.js");
+/* harmony import */ var _css_charts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../css/charts.css */ "./src/css/charts.css");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // dependencies
 
@@ -95,7 +246,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Content = () => {
+const ChartComponent = () => {
   // initialize all the Constants
   const allConstants = (0,_Constants__WEBPACK_IMPORTED_MODULE_3__["default"])(); // Initialize chart data and its modifier function
 
@@ -128,7 +279,7 @@ const Content = () => {
     className: "content-div",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_viewers_ViewersPanel__WEBPACK_IMPORTED_MODULE_2__["default"], {
       updateViewersCount: updateViewersCount
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_charts_ChartPanel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_ChartPanel__WEBPACK_IMPORTED_MODULE_1__["default"], {
       data: data,
       labels: labels,
       id: id
@@ -136,7 +287,7 @@ const Content = () => {
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Content);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChartComponent);
 
 /***/ }),
 
@@ -14005,6 +14156,33 @@ function styleChanged(style, prevStyle) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/carousel.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/carousel.css ***!
+  \********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n\n  --darker-grey: #4d4c4c;\n  --dark-grey: #ddd;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n\n  --light-red: #f02323;\n  --lighter-red: #e31a1a;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-rows: 50px 1fr;\n  grid-template-columns: 1fr;\n\n  /* margin to make it look good */\n  margin: 2%;\n}\n\n.title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.content {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/carousel.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,mCAAmC;;EAEnC,0BAA0B;;EAE1B,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;;EAEvB,oBAAoB;EACpB,sBAAsB;;EAEtB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,4BAA4B;EAC5B,0BAA0B;;EAE1B,gCAAgC;EAChC,UAAU;AACZ;;AAEA;EACE,qCAAqC;EACrC,0BAA0B;EAC1B,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,4CAA4C;EAC5C,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,qBAAqB;AACrB;EACE,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,wBAAwB;EACxB,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,qBAAqB;AACvB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;;EAElB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;;EAE3B,WAAW;EACX,0BAA0B;EAC1B,qCAAqC;EACrC,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,QAAQ;AACV;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,yBAAyB;IACzB,yBAAyB;EAC3B;;EAEA;IACE,WAAW;EACb;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Roboto:300,400,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n\n  --darker-grey: #4d4c4c;\n  --dark-grey: #ddd;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n\n  --light-red: #f02323;\n  --lighter-red: #e31a1a;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-rows: 50px 1fr;\n  grid-template-columns: 1fr;\n\n  /* margin to make it look good */\n  margin: 2%;\n}\n\n.title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.content {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/charts.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/charts.css ***!
@@ -14031,10 +14209,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, "/* Charts related */\n.chart-container
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
-  \*****************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/styles.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
+  \******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14051,7 +14229,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,oCAAoC;;EAEpC,0BAA0B;EAC1B,uBAAuB;;EAEvB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;EACvB,yBAAyB;;EAEzB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,0BAA0B;EAC1B,UAAU;;EAEV,kCAAkC;EAClC,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,0BAA0B;;EAE1B,0BAA0B;EAC1B,YAAY;AACd;;AAEA,qCAAqC;AACrC;EACE,uCAAuC;EACvC,yBAAyB;AAC3B;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA,uBAAuB;AACvB;EACE,WAAW;AACb;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA,6BAA6B;AAC7B;EACE,wBAAwB,EAAE,uDAAuD;EACjF,WAAW,EAAE,4CAA4C;EACzD,uBAAuB,EAAE,8BAA8B;AACzD;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa,EAAE,iHAAiH;AAClI;;AAEA,qCAAqC;AACrC;EACE,YAAY;EACZ,UAAU;EACV,+BAA+B;EAC/B,eAAe;EACf,gBAAgB;AAClB;;AAEA,mCAAmC;AACnC;EACE,YAAY;EACZ,UAAU;EACV,qCAAqC;EACrC,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,0BAA0B;EAC5B;EACA;IACE,0CAA0C;EAC5C;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,oCAAoC;;EAEpC,0BAA0B;EAC1B,uBAAuB;;EAEvB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;EACvB,yBAAyB;;EAEzB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,0BAA0B;EAC1B,UAAU;;EAEV,kCAAkC;EAClC,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,0BAA0B;;EAE1B,0BAA0B;EAC1B,YAAY;AACd;;AAEA,qCAAqC;AACrC;EACE,uCAAuC;EACvC,yBAAyB;AAC3B;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA,uBAAuB;AACvB;EACE,WAAW;AACb;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA,6BAA6B;AAC7B;EACE,wBAAwB,EAAE,uDAAuD;EACjF,WAAW,EAAE,4CAA4C;EACzD,uBAAuB,EAAE,8BAA8B;AACzD;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa,EAAE,iHAAiH;AAClI;;AAEA,qCAAqC;AACrC;EACE,YAAY;EACZ,UAAU;EACV,+BAA+B;EAC/B,eAAe;EACf,gBAAgB;AAClB;;AAEA,mCAAmC;AACnC;EACE,YAAY;EACZ,UAAU;EACV,qCAAqC;EACrC,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,0BAA0B;EAC5B;EACA;IACE,0CAA0C;EAC5C;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 2%;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n.header {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1em;\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-regular);\n  text-transform: uppercase;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n.content-div {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .content-div {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -49117,6 +49295,60 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./src/css/carousel.css":
+/*!******************************!*\
+  !*** ./src/css/carousel.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_carousel_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./carousel.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/carousel.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_carousel_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_carousel_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_carousel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_carousel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/css/charts.css":
 /*!****************************!*\
   !*** ./src/css/charts.css ***!
@@ -49171,10 +49403,10 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/css/style.css":
-/*!***************************!*\
-  !*** ./src/css/style.css ***!
-  \***************************/
+/***/ "./src/css/styles.css":
+/*!****************************!*\
+  !*** ./src/css/styles.css ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -49193,7 +49425,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./style.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./styles.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/styles.css");
 
       
       
@@ -49215,12 +49447,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -49688,6 +49920,56 @@ function validate(uuid) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/favicon.ico";
+
+/***/ }),
+
+/***/ "./src/images/1.jpg":
+/*!**************************!*\
+  !*** ./src/images/1.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/1.jpg";
+
+/***/ }),
+
+/***/ "./src/images/2.jpg":
+/*!**************************!*\
+  !*** ./src/images/2.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/2.jpg";
+
+/***/ }),
+
+/***/ "./src/images/3.jpg":
+/*!**************************!*\
+  !*** ./src/images/3.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/3.jpg";
+
+/***/ }),
+
+/***/ "./src/images/4.jpg":
+/*!**************************!*\
+  !*** ./src/images/4.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/4.jpg";
+
+/***/ }),
+
+/***/ "./src/images/5.jpg":
+/*!**************************!*\
+  !*** ./src/images/5.jpg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/5.jpg";
 
 /***/ })
 
