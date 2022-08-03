@@ -77,11 +77,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navigation */ "./src/components/carousel/Navigation.js");
-/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/carousel.css */ "./src/css/carousel.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // Components
- // css
-
 
 
 
@@ -92,15 +89,15 @@ const Carousel = ({
   total
 }) => {
   const src = `images/${srcNumber}.jpg`;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     className: "carousel",
-    children: [srcNumber != 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    children: [srcNumber != 1 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
       updateImage: updateImage,
       position: "left"
-    }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+    }) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: src,
       className: "carousel-img"
-    }), srcNumber != total ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    }), srcNumber != total ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Navigation__WEBPACK_IMPORTED_MODULE_0__["default"], {
       updateImage: updateImage,
       position: "right"
     }) : null]
@@ -124,14 +121,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel */ "./src/components/carousel/Carousel.js");
-/* harmony import */ var _images_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/1.jpg */ "./src/images/1.jpg");
-/* harmony import */ var _images_2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/2.jpg */ "./src/images/2.jpg");
-/* harmony import */ var _images_3_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/3.jpg */ "./src/images/3.jpg");
-/* harmony import */ var _images_4_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/4.jpg */ "./src/images/4.jpg");
-/* harmony import */ var _images_5_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/5.jpg */ "./src/images/5.jpg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _css_carousel_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/carousel.css */ "./src/css/carousel.css");
+/* harmony import */ var _images_1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/1.jpg */ "./src/images/1.jpg");
+/* harmony import */ var _images_2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/2.jpg */ "./src/images/2.jpg");
+/* harmony import */ var _images_3_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/3.jpg */ "./src/images/3.jpg");
+/* harmony import */ var _images_4_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/4.jpg */ "./src/images/4.jpg");
+/* harmony import */ var _images_5_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/5.jpg */ "./src/images/5.jpg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 // dependencies
  // Components
+
+ // css
 
  // images
 
@@ -174,9 +174,9 @@ const CarouselComponent = () => {
     active,
     total
   } = carouselData;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-    className: "content",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+    className: "carousel-container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], {
       srcNumber: active,
       total: total,
       updateImage: updateImage
@@ -14174,9 +14174,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n\n  --darker-grey: #4d4c4c;\n  --dark-grey: #ddd;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n\n  --light-red: #f02323;\n  --lighter-red: #e31a1a;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-rows: 50px 1fr;\n  grid-template-columns: 1fr;\n\n  /* margin to make it look good */\n  margin: 2%;\n}\n\n.title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.content {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/carousel.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,mCAAmC;;EAEnC,0BAA0B;;EAE1B,sBAAsB;EACtB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;;EAEvB,oBAAoB;EACpB,sBAAsB;;EAEtB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,4BAA4B;EAC5B,0BAA0B;;EAE1B,gCAAgC;EAChC,UAAU;AACZ;;AAEA;EACE,qCAAqC;EACrC,0BAA0B;EAC1B,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,4CAA4C;EAC5C,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,qBAAqB;AACrB;EACE,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,wBAAwB;EACxB,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,qBAAqB;AACvB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;;EAElB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;;EAE3B,WAAW;EACX,0BAA0B;EAC1B,qCAAqC;EACrC,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,QAAQ;AACV;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,yBAAyB;IACzB,yBAAyB;EAC3B;;EAEA;IACE,WAAW;EACb;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Roboto:300,400,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Roboto\", sans-serif;\n\n  --font-weight-regular: 300;\n\n  --darker-grey: #4d4c4c;\n  --dark-grey: #ddd;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n\n  --light-red: #f02323;\n  --lighter-red: #e31a1a;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\n.container {\n  display: grid;\n  grid-template-rows: 50px 1fr;\n  grid-template-columns: 1fr;\n\n  /* margin to make it look good */\n  margin: 2%;\n}\n\n.title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.content {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.carousel-container {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/carousel.css"],"names":[],"mappings":"AAAA;EACE,qCAAqC;EACrC,0BAA0B;EAC1B,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,4CAA4C;EAC5C,aAAa;AACf;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,qBAAqB;AACrB;EACE,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,wBAAwB;EACxB,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,qBAAqB;AACvB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;;EAElB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;;EAE3B,WAAW;EACX,0BAA0B;EAC1B,qCAAqC;EACrC,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,QAAQ;AACV;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,yBAAyB;IACzB,yBAAyB;EAC3B;;EAEA;IACE,WAAW;EACb;AACF","sourcesContent":[".title {\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 1em;\n  grid-row: 1;\n}\n\n.carousel-container {\n  padding: 1em;\n  box-shadow: 0 2px 10px var(--lighter-shadow);\n  display: grid;\n}\n\n.italic {\n  font-style: italic;\n}\n\n.caption {\n  text-transform: uppercase;\n}\n\n/* Carousel realted */\n.carousel {\n  justify-self: center;\n  position: relative;\n}\n\n.carousel-img {\n  width: calc(75vw - 50px);\n  height: calc(80vh - 50px);\n}\n\n/* all the anchor links */\na {\n  text-decoration: none;\n}\n\n.arrow {\n  align-self: center;\n  padding: 1em;\n  font-style: 1.5rem;\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n\n  width: 50px;\n  color: var(--lighter-grey);\n  background-color: var(--light-purple);\n  opacity: 0.5;\n  text-align: center;\n}\n\n.arrow:hover {\n  cursor: pointer;\n  opacity: 0.8;\n}\n\n.arrow-right {\n  right: 0;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .carousel-img {\n    width: calc(100vw - 50px);\n    height: calc(50vh - 50px);\n  }\n\n  .arrow {\n    width: 30px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

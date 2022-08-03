@@ -4,6 +4,9 @@ import { useState } from "react";
 // Components
 import Carousel from "./Carousel";
 
+// css
+import "../../css/carousel.css";
+
 // images
 import "../../images/1.jpg";
 import "../../images/2.jpg";
@@ -36,7 +39,7 @@ const CarouselComponent = () => {
 
   const { active, total } = carouselData;
   return (
-    <div className="content">
+    <div className="carousel-container">
       <Carousel srcNumber={active} total={total} updateImage={updateImage} />
     </div>
   );

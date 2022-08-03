@@ -1,9 +1,6 @@
 // Components
 import Navigation from "./Navigation";
 
-// css
-import "../../css/carousel.css";
-
 const Carousel = ({ updateImage, srcNumber, total }) => {
   const src = `images/${srcNumber}.jpg`;
 
