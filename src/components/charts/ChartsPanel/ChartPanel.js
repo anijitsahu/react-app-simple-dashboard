@@ -6,7 +6,7 @@ import ShowChartTypes from "./ShowChartTypes";
 import ShowChart from "./ShowChart";
 
 // Constants
-import Constants from "../Constants";
+import Constants from "../../Constants";
 
 const ChartPanel = ({ data, labels, id }) => {
   // initialize all the Constants

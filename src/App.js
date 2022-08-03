@@ -11,8 +11,8 @@ const App = () => {
     <div className="container">
       {/* including the Title and other components */}
       <Header />
-      <ChartComponent />
       <CarouselComponent />
+      <ChartComponent />
     </div>
   );
 };

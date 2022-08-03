@@ -3,11 +3,11 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 // components
-import ChartPanel from "./ChartPanel";
-import ViewersPanel from "../viewers/ViewersPanel";
+import ChartPanel from "./ChartsPanel/ChartPanel";
+import ViewersPanel from "./ViewersPanel/ViewersPanel";
 
 // constants
-import Constants from "../Constants";
+import Constants from ".././Constants";
 
 // css
 import "../../css/charts.css";
