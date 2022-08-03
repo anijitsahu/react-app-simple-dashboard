@@ -88,17 +88,17 @@ function Timeline() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     className: "timeline-container",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
-      class: "section",
+      className: "section",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        class: "title",
+        className: "timeline-title",
         children: "Time has helped me to learn so far"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2019"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Want to work with React JS"
@@ -110,12 +110,12 @@ function Timeline() {
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2018"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Learnt cooking"
@@ -127,12 +127,12 @@ function Timeline() {
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2017"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Learned Angular JS 1.5"
@@ -142,12 +142,12 @@ function Timeline() {
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2016"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Started career with AriveGuru Technologies"
@@ -155,12 +155,12 @@ function Timeline() {
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2013"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Prepared to be a Software Developer"
@@ -170,12 +170,12 @@ function Timeline() {
           })
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "timeline-div",
+        className: "timeline-div",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "timeframe",
+          className: "timeframe",
           children: "2010"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "actions",
+          className: "actions",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
               children: "Passed B.Tech"
@@ -14374,7 +14374,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.title {\n  font-size: 2em;\n  padding: 1em;\n  width: 50vw;\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/timeline.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;EACE,aAAa;EACb,+BAA+B;EAC/B,oCAAoC;EACpC,0BAA0B;EAC1B,oCAAoC;;EAEpC,gBAAgB;EAChB,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,qCAAqC;EACrC,aAAa;EACb,iCAAiC;EACjC,0BAA0B;EAC1B,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,cAAc;EACd,kBAAkB;EAClB,aAAa;EACb,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA,oBAAoB;AACpB;EACE,aAAa;EACb,mBAAmB;EACnB,qBAAqB;EACrB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,WAAW;AACb;;AAEA,qBAAqB;AACrB;EACE,0CAA0C;EAC1C,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,qCAAqC;EACrC,qCAAqC;EACrC,uBAAuB;;EAEvB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;EAC3B,WAAW;;EAEX,gBAAgB;EAChB,YAAY;;EAEZ,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,uCAAuC;EACvC,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;;EAEA;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF;;AAEA;EACE;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF","sourcesContent":["/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.title {\n  font-size: 2em;\n  padding: 1em;\n  width: 50vw;\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.timeline-title {\n  font-size: 2em;\n  padding: 1em;\n  /* width: 50vw; */\n  color: var(--light-purple);\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/timeline.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;EACE,aAAa;EACb,+BAA+B;EAC/B,oCAAoC;EACpC,0BAA0B;EAC1B,oCAAoC;;EAEpC,gBAAgB;EAChB,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,qCAAqC;EACrC,aAAa;EACb,iCAAiC;EACjC,0BAA0B;EAC1B,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,cAAc;EACd,kBAAkB;EAClB,aAAa;EACb,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA,oBAAoB;AACpB;EACE,aAAa;EACb,mBAAmB;EACnB,qBAAqB;EACrB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,iBAAiB;EACjB,0BAA0B;AAC5B;;AAEA,qBAAqB;AACrB;EACE,0CAA0C;EAC1C,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,qCAAqC;EACrC,qCAAqC;EACrC,uBAAuB;;EAEvB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;EAC3B,WAAW;;EAEX,gBAAgB;EAChB,YAAY;;EAEZ,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,uCAAuC;EACvC,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;;EAEA;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF;;AAEA;EACE;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF","sourcesContent":["/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.timeline-title {\n  font-size: 2em;\n  padding: 1em;\n  /* width: 50vw; */\n  color: var(--light-purple);\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

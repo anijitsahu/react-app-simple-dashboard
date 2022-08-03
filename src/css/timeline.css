@@ -56,10 +56,11 @@
   overflow-y: scroll;
 }
 
-.title {
+.timeline-title {
   font-size: 2em;
   padding: 1em;
-  width: 50vw;
+  /* width: 50vw; */
+  color: var(--light-purple);
 }
 
 /* timeline related */
