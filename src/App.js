@@ -1,10 +1,11 @@
-// components
-import Header from "./components/layout/Header";
-
 // css
 import "./css/styles.css";
+
+// components
+import Header from "./components/layout/Header";
 import CarouselComponent from "./components/carousel/CarouselComponent";
 import ChartComponent from "./components/charts/ChartComponent";
+import Timeline from "./components/Timeline";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <CarouselComponent />
       <ChartComponent />
+      <Timeline />
     </main>
   );
 };

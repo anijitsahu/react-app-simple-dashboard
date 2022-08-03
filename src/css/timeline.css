@@ -1,0 +1,147 @@
+/* Container related */
+.timeline-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: var(--light-black);
+  color: var(--lighter-grey);
+  font-weight: var(--font-weight-thin);
+
+  overflow: hidden;
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+/* Aside related*/
+.aside {
+  background-color: var(--light-purple);
+  display: grid;
+  grid-template-rows: 4fr auto auto;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.photo-div {
+  margin-left: 2px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.photo-div:hover {
+  opacity: 0.6;
+}
+
+.profile-photo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* Icon related */
+.icon-block {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.icon-block:hover {
+  opacity: 0.5;
+}
+
+/* section related */
+.section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow-y: scroll;
+}
+
+.title {
+  font-size: 2em;
+  padding: 1em;
+  width: 50vw;
+}
+
+/* timeline related */
+.timeline-div {
+  border-left: 1px solid var(--light-purple);
+  position: relative;
+  width: 40vw;
+}
+
+.timeframe {
+  border: 2px solid var(--light-purple);
+  background-color: var(--light-purple);
+  color: var(--dark-grey);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -26px;
+
+  font-weight: 300;
+  padding: 5px;
+
+  width: 50px;
+  height: 34px;
+}
+
+.timeframe:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.actions {
+  padding: 4em;
+  font-weight: var(--font-weight-regular);
+  color: var(--dark-grey);
+}
+
+li {
+  list-style: square;
+  padding-top: 0.5em;
+}
+
+li:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: var(--font-small);
+  }
+
+  .title {
+    font-size: 1.5em;
+    width: 70vw;
+  }
+
+  .timeline-div {
+    width: 57vw;
+  }
+
+  .timeframe {
+    width: 40px;
+    height: 30px;
+    left: -23px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 1.5em;
+    width: 76vw;
+  }
+
+  .timeline-div {
+    width: 60vw;
+  }
+
+  .timeframe {
+    width: 37px;
+    height: 26px;
+    left: -21px;
+  }
+}

@@ -12,13 +12,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/layout/Header */ "./src/components/layout/Header.js");
-/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/styles.css */ "./src/css/styles.css");
+/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.css */ "./src/css/styles.css");
+/* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/layout/Header */ "./src/components/layout/Header.js");
 /* harmony import */ var _components_carousel_CarouselComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/carousel/CarouselComponent */ "./src/components/carousel/CarouselComponent.js");
 /* harmony import */ var _components_charts_ChartComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/charts/ChartComponent */ "./src/components/charts/ChartComponent.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-// components
- // css
+/* harmony import */ var _components_Timeline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Timeline */ "./src/components/Timeline.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// css
+ // components
+
 
 
 
@@ -27,9 +29,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const App = () => {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("main", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("main", {
     className: "container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout_Header__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_carousel_CarouselComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_charts_ChartComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_layout_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_carousel_CarouselComponent__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_charts_ChartComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_Timeline__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
   });
 };
 
@@ -63,6 +65,129 @@ const Constants = () => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Constants);
+
+/***/ }),
+
+/***/ "./src/components/Timeline.js":
+/*!************************************!*\
+  !*** ./src/components/Timeline.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Timeline)
+/* harmony export */ });
+/* harmony import */ var _css_timeline_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/timeline.css */ "./src/css/timeline.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// css
+
+
+
+function Timeline() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "timeline-container",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+      class: "section",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        class: "title",
+        children: "Time has helped me to learn so far"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2019"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Want to work with React JS"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Continue to work in Node JS"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Want to be a FullStack Developer"
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2018"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Learnt cooking"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Learned debugging of JavaScript code"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Get new concepts of Modularity"
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2017"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Learned Angular JS 1.5"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Learned basics of NPM"
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2016"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Started career with AriveGuru Technologies"
+            })
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2013"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Prepared to be a Software Developer"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Completed M.Tech"
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "timeline-div",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "timeframe",
+          children: "2010"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          class: "actions",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Passed B.Tech"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+              children: "Participated in a Debate competition"
+            })]
+          })
+        })]
+      })]
+    })
+  });
+}
 
 /***/ }),
 
@@ -14224,6 +14349,32 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700);"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\nheader {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1rem;\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-dark);\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 0.5rem;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .charts-panel {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/styles.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,oBAAoB;EACpB,oCAAoC;;EAEpC,0BAA0B;EAC1B,uBAAuB;;EAEvB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,oBAAoB;;EAEpB,uBAAuB;EACvB,yBAAyB;;EAEzB,kCAAkC;EAClC,oCAAoC;AACtC;;AAEA;EACE,8BAA8B;EAC9B,+BAA+B;AACjC;;AAEA;EACE,aAAa;EACb,qCAAqC;EACrC,0BAA0B;;EAE1B,0BAA0B;EAC1B,aAAa;AACf;;AAEA;EACE,aAAa;EACb,0BAA0B;;EAE1B,kCAAkC;EAClC,4CAA4C;AAC9C;;AAEA,qCAAqC;AACrC;EACE,oCAAoC;EACpC,qCAAqC;EACrC,0BAA0B;EAC1B,eAAe;AACjB;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,wBAAwB;;AAExB,uBAAuB;AACvB;EACE,WAAW;AACb;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA,6BAA6B;AAC7B;EACE,wBAAwB,EAAE,uDAAuD;EACjF,WAAW,EAAE,4CAA4C;EACzD,uBAAuB,EAAE,8BAA8B;AACzD;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa,EAAE,iHAAiH;AAClI;;AAEA,qCAAqC;AACrC;EACE,YAAY;EACZ,UAAU;EACV,+BAA+B;EAC/B,eAAe;EACf,gBAAgB;AAClB;;AAEA,mCAAmC;AACnC;EACE,YAAY;EACZ,UAAU;EACV,qCAAqC;EACrC,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;AACnC;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,0BAA0B;EAC5B;EACA;IACE,0CAA0C;EAC5C;AACF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --font-small: 10px;\n  --font-regular: 16px;\n  --font-family: \"Poppins\", sans-serif;\n\n  --font-weight-regular: 300;\n  --font-weight-dark: 700;\n\n  --darker-grey: #aaa;\n  --dark-grey: #ccc;\n  --light-grey: #eee;\n  --lighter-grey: #fff;\n\n  --light-purple: #ab14ab;\n  --lighter-purple: #dd65dd;\n\n  --light-shadow: rgba(0, 0, 0, 0.4);\n  --lighter-shadow: rgba(0, 0, 0, 0.2);\n}\n\nhtml {\n  font-size: var(--font-regular);\n  font-family: var(--font-family);\n}\n\nheader {\n  display: grid;\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n\n  grid-template-columns: 1fr;\n  padding: 1rem;\n}\n\n.container {\n  display: grid;\n  grid-template-columns: 1fr;\n\n  border: solid 1px var(--dark-grey);\n  box-shadow: 3px 5px 22px var(--light-shadow);\n}\n\n/* title of the application related */\n.title {\n  font-weight: var(--font-weight-dark);\n  background-color: var(--light-purple);\n  color: var(--lighter-grey);\n  padding: 0.5rem;\n}\n\n.bold-title {\n  font-weight: var(--font-weight-dark);\n}\n\ninput[type=\"text\"] {\n  padding: 1.9em;\n  font-size: 0.7em;\n  letter-spacing: 1px;\n}\n\n/* content div related */\n\n/* scroll bar related */\n::-webkit-scrollbar {\n  width: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background-color: #ccc;\n  border-radius: 8px;\n}\n\n/* Input type range related */\ninput[type=\"range\"] {\n  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */\n  width: 100%; /* Specific width is required for Firefox. */\n  background: transparent; /* Otherwise white in Chrome */\n}\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n}\n\ninput[type=\"range\"]:focus {\n  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\n\n/* Special styling for WebKit/Blink */\ninput[type=\"range\"]::-webkit-slider-thumb {\n  height: 10px;\n  width: 5px;\n  background: var(--light-purple);\n  cursor: pointer;\n  margin-top: -5px;\n}\n\n/* All the same stuff for Firefox */\ninput[type=\"range\"]::-moz-range-thumb {\n  height: 10px;\n  width: 5px;\n  border: solid 1px var(--light-purple);\n  background: var(--light-purple);\n  cursor: pointer;\n}\n\ninput[type=\"range\"]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 1px;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\ninput[type=\"range\"]::-moz-range-track {\n  width: 100%;\n  cursor: pointer;\n  background: var(--lighter-purple);\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  html {\n    font-size: var(--font-small);\n  }\n  .charts-panel {\n    grid-template-columns: 1fr;\n  }\n  .viewers-panel {\n    border-bottom: solid 1px var(--light-grey);\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/timeline.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/timeline.css ***!
+  \********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.title {\n  font-size: 2em;\n  padding: 1em;\n  width: 50vw;\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/css/timeline.css"],"names":[],"mappings":"AAAA,sBAAsB;AACtB;EACE,aAAa;EACb,+BAA+B;EAC/B,oCAAoC;EACpC,0BAA0B;EAC1B,oCAAoC;;EAEpC,gBAAgB;EAChB,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,qCAAqC;EACrC,aAAa;EACb,iCAAiC;EACjC,0BAA0B;EAC1B,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,cAAc;EACd,kBAAkB;EAClB,aAAa;EACb,eAAe;AACjB;;AAEA;EACE,YAAY;AACd;;AAEA,oBAAoB;AACpB;EACE,aAAa;EACb,mBAAmB;EACnB,qBAAqB;EACrB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,WAAW;AACb;;AAEA,qBAAqB;AACrB;EACE,0CAA0C;EAC1C,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,qCAAqC;EACrC,qCAAqC;EACrC,uBAAuB;;EAEvB,kBAAkB;EAClB,QAAQ;EACR,2BAA2B;EAC3B,WAAW;;EAEX,gBAAgB;EAChB,YAAY;;EAEZ,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,uCAAuC;EACvC,uBAAuB;AACzB;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA,kBAAkB;AAClB;EACE;IACE,4BAA4B;EAC9B;;EAEA;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF;;AAEA;EACE;IACE,gBAAgB;IAChB,WAAW;EACb;;EAEA;IACE,WAAW;EACb;;EAEA;IACE,WAAW;IACX,YAAY;IACZ,WAAW;EACb;AACF","sourcesContent":["/* Container related */\n.timeline-container {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  background-color: var(--light-black);\n  color: var(--lighter-grey);\n  font-weight: var(--font-weight-thin);\n\n  overflow: hidden;\n  /* height: 100vh; */\n  /* width: 100vw; */\n}\n\n/* Aside related*/\n.aside {\n  background-color: var(--light-purple);\n  display: grid;\n  grid-template-rows: 4fr auto auto;\n  grid-template-columns: 1fr;\n  grid-gap: 1rem;\n}\n\n.photo-div {\n  margin-left: 2px;\n  margin-top: 5px;\n  cursor: pointer;\n}\n\n.photo-div:hover {\n  opacity: 0.6;\n}\n\n.profile-photo {\n  width: 45px;\n  height: 45px;\n  border-radius: 50%;\n}\n\n/* Icon related */\n.icon-block {\n  display: block;\n  text-align: center;\n  padding: 1rem;\n  cursor: pointer;\n}\n\n.icon-block:hover {\n  opacity: 0.5;\n}\n\n/* section related */\n.section {\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  overflow-y: scroll;\n}\n\n.title {\n  font-size: 2em;\n  padding: 1em;\n  width: 50vw;\n}\n\n/* timeline related */\n.timeline-div {\n  border-left: 1px solid var(--light-purple);\n  position: relative;\n  width: 40vw;\n}\n\n.timeframe {\n  border: 2px solid var(--light-purple);\n  background-color: var(--light-purple);\n  color: var(--dark-grey);\n\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  left: -26px;\n\n  font-weight: 300;\n  padding: 5px;\n\n  width: 50px;\n  height: 34px;\n}\n\n.timeframe:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n.actions {\n  padding: 4em;\n  font-weight: var(--font-weight-regular);\n  color: var(--dark-grey);\n}\n\nli {\n  list-style: square;\n  padding-top: 0.5em;\n}\n\nli:hover {\n  opacity: 0.5;\n  cursor: pointer;\n}\n\n/* media queries */\n@media screen and (max-width: 500px) {\n  body {\n    font-size: var(--font-small);\n  }\n\n  .title {\n    font-size: 1.5em;\n    width: 70vw;\n  }\n\n  .timeline-div {\n    width: 57vw;\n  }\n\n  .timeframe {\n    width: 40px;\n    height: 30px;\n    left: -23px;\n  }\n}\n\n@media screen and (max-width: 320px) {\n  .title {\n    font-size: 1.5em;\n    width: 76vw;\n  }\n\n  .timeline-div {\n    width: 60vw;\n  }\n\n  .timeframe {\n    width: 37px;\n    height: 26px;\n    left: -21px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -49447,6 +49598,60 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_styles_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/css/timeline.css":
+/*!******************************!*\
+  !*** ./src/css/timeline.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_timeline_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./timeline.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/timeline.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_timeline_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_timeline_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_timeline_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_timeline_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
