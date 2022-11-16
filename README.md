@@ -11,40 +11,44 @@ All the charts are drawn by a popular library named [Chart JS](https://www.npmjs
 
 For UI creation [HTML5](https://www.w3schools.com/html/html5_intro.asp) and [CSS3](https://www.w3schools.com/css/) are used. [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), the new feature of [CSS3](https://www.w3schools.com/css/) is used for layout creation purpose. [Fontawesome](https://fontawesome.com/) icons are added for aesthetic purpose.
 
+It is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/)
+
 This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
 ## Features
 
-1.   Code is rewritten with [React JS 18](https://reactjs.org/docs/getting-started.html)
-2.   Latest features of JavaScript i.e. ES6, ES7, ES8 is used
-3.   [React JS Hooks](https://reactjs.org/docs/hooks-intro.html) are used with Functional components
-4.   **Charts code** is rewritten with [react-chatjs-2 (v4.0)](https://react-chartjs-2.netlify.app/) and [Chart.js (v3.7)](https://www.chartjs.org/docs/latest/)
+1.  Code is rewritten with [React JS 18](https://reactjs.org/docs/getting-started.html)
+2.  Latest features of JavaScript i.e. ES6, ES7, ES8 is used
+3.  [React JS Hooks](https://reactjs.org/docs/hooks-intro.html) are used with Functional components
+4.  **Charts code** is rewritten with [react-chatjs-2 (v4.0)](https://react-chartjs-2.netlify.app/) and [Chart.js (v3.7)](https://www.chartjs.org/docs/latest/)
 
 <br/>
 
-5.   This is a Simple Dashboard page Application
+5.  This is a Simple Dashboard page Application
 6.  Charts are plotted using [Chart JS](https://www.npmjs.com/package/react-chartjs-2)
-7.   Charts are upadated when user changes the hourly watching rate of channel viewing
+7.  Charts are upadated when user changes the hourly watching rate of channel viewing
 
 <br/>
 
-8.   Maximum and minimum values of the hourly rate is `24` and `0` respectively
-9.   Three types of chart namely _Pie, Doughnut_ and _Bar_ is available
-10.   _Tooltips_ on each of the graph is supported
-11.   _Legend_ and _title_ showing for data indication is supported
+8.  Maximum and minimum values of the hourly rate is `24` and `0` respectively
+9.  Three types of chart namely _Pie, Doughnut_ and _Bar_ is available
+10. _Tooltips_ on each of the graph is supported
+11. _Legend_ and _title_ showing for data indication is supported
 
 <br/>
 
 12. This is just a Simple Carousel program
-   - Next image can be seen by clicking `>` button
-   - Next button will not be shown when the last image is reached
+
+- Next image can be seen by clicking `>` button
+- Next button will not be shown when the last image is reached
 
 13. Previous image can be seen clicking `<` button
-   - While loading the first image previous button will not be there for obvious reason 
 
+- While loading the first image previous button will not be there for obvious reason
 
-14.   No database / storage is there. So no changes are _persistant_
-15.   Mobile view is supported
+14. No database / storage is there. So no changes are _persistant_
+15. Mobile view is supported
+16. As it is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/) it supports features like **installability, offline load**  through *manifest.json and Service Worker*
 
 ## Installation
 
@@ -54,13 +58,22 @@ Clone the repository:
 $ git clone https://github.com/anijitsahu/react-app-simple-dashboard-page.git
 ```
 
-Navigate inside the directory:
+Navigate inside the directory and install all the dependencies:
 
 ```bash
-$ cd react-app-simple-dashboard-page/dist
+$ cd react-app-simple-dashboard-page
+
+# install dependencies
+$ npm install
 ```
 
-Open the `index.html` file in a web browser
+Now run the application
+
+```bash
+$ npm start
+```
+
+Open the `localhost:8080/` in a web browser
 
 Change the _hourly_ watching values of the popular channels and see the changes in the graph
 
