@@ -1,4 +1,4 @@
-# react-app-simple-dashboard-page
+# react-app-simple-dashboard-page-pwa
 
 A Simple Dashboard page using [React JS](https://reactjs.org/docs/getting-started.html), a JavaScript library to make awesome UI by Facebook and [Chart JS](https://www.npmjs.com/package/react-chartjs-2) for plotting charts.
 
