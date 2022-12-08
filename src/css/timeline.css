@@ -3,12 +3,9 @@
   display: grid;
   grid-template-columns: 1fr auto;
   background-color: var(--light-black);
-  color: var(--lighter-grey);
-  font-weight: var(--font-weight-thin);
 
+  font-weight: var(--font-weight-thin);
   overflow: hidden;
-  /* height: 100vh; */
-  /* width: 100vw; */
 }
 
 /* Aside related*/
@@ -57,23 +54,22 @@
 }
 
 .timeline-title {
-  font-size: 2em;
-  padding: 1em;
-  /* width: 50vw; */
-  color: var(--light-purple);
+  justify-self: flex-start;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 /* timeline related */
 .timeline-div {
   border-left: 1px solid var(--light-purple);
   position: relative;
-  width: 40vw;
+  width: 84vw;
 }
 
 .timeframe {
   border: 2px solid var(--light-purple);
   background-color: var(--light-purple);
-  color: var(--dark-grey);
+  color: var(--lighter-grey);
 
   position: absolute;
   top: 50%;
@@ -83,7 +79,7 @@
   font-weight: 300;
   padding: 5px;
 
-  width: 50px;
+  width: 70px;
   height: 34px;
 }
 
@@ -93,9 +89,8 @@
 }
 
 .actions {
-  padding: 4em;
+  padding: 2em 5em;
   font-weight: var(--font-weight-regular);
-  color: var(--dark-grey);
 }
 
 li {
@@ -106,6 +101,10 @@ li {
 li:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.channel-metadata {
+  color: var(--darker-grey);
 }
 
 /* media queries */

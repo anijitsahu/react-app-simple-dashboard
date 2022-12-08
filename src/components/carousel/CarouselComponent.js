@@ -14,10 +14,8 @@ import "../../images/2.jpg";
 import "../../images/3.jpg";
 import "../../images/4.jpg";
 
-import "../../images/5.jpg";
-
 const CarouselComponent = () => {
-  const TOTAL_NUMBER_OF_IMAGES = 5;
+  const TOTAL_NUMBER_OF_IMAGES = 4;
   // initialize the initial state and its modifier function
   const [carouselData, setCarouselData] = useState({
     active: 1,

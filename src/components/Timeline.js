@@ -5,65 +5,91 @@ export default function Timeline() {
   return (
     <div className="timeline-container">
       <section className="section">
-        <div className="timeline-title">Time has helped me to learn so far</div>
+        <div className="viewers-panel-title timeline-title">
+          TV Watching Guide
+        </div>
 
         <div className="timeline-div">
-          <div className="timeframe">2019</div>
+          <div className="timeframe">8:30AM</div>
           <div className="actions">
             <ul>
-              <li>Want to work with React JS</li>
-              <li>Continue to work in Node JS</li>
-              <li>Want to be a FullStack Developer</li>
+              <li>
+                Science of Stupid{" "}
+                <span className="channel-metadata">(Nat Geo)</span>
+              </li>
+              <li>
+                Godhuli Aalaap{" "}
+                <span className="channel-metadata">(Star Jalsha)</span>
+              </li>
+              <li>
+                Man vs Wild{" "}
+                <span className="channel-metadata">(Discovery)</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="timeline-div">
-          <div className="timeframe">2018</div>
+          <div className="timeframe">12:30PM</div>
           <div className="actions">
             <ul>
-              <li>Learnt cooking</li>
-              <li>Learned debugging of JavaScript code</li>
-              <li>Get new concepts of Modularity</li>
+              <li>
+                S.O.S cars <span className="channel-metadata">(Nat Geo)</span>
+              </li>
+              <li>
+                Dhulokona{" "}
+                <span className="channel-metadata">(Star Jalsha)</span>
+              </li>
+              <li>
+                India vs Newzealand{" "}
+                <span className="channel-metadata">(Star Sports)</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="timeline-div">
-          <div className="timeframe">2017</div>
+          <div className="timeframe">4:30PM</div>
           <div className="actions">
             <ul>
-              <li>Learned Angular JS 1.5</li>
-              <li>Learned basics of NPM</li>
+              <li>
+                Man vs Wild{" "}
+                <span className="channel-metadata">(Discovery)</span>
+              </li>
+              <li>
+                Wicked Tuna <span className="channel-metadata">(Nat Geo)</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="timeline-div">
-          <div className="timeframe">2016</div>
+          <div className="timeframe">8:30PM</div>
           <div className="actions">
             <ul>
-              <li>Started career with AriveGuru Technologies</li>
+              <li>
+                To Catch a Smuggler{" "}
+                <span className="channel-metadata">(Nat Geo)</span>
+              </li>
+              <li>
+                Gaatchora <span className="channel-metadata">(Star Plus)</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="timeline-div">
-          <div className="timeframe">2013</div>
+          <div className="timeframe">12:30AM</div>
           <div className="actions">
             <ul>
-              <li>Prepared to be a Software Developer</li>
-              <li>Completed M.Tech</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-div">
-          <div className="timeframe">2010</div>
-          <div className="actions">
-            <ul>
-              <li>Passed B.Tech</li>
-              <li>Participated in a Debate competition</li>
+              <li>
+                Science of Stupid{" "}
+                <span className="channel-metadata">(Nat Geo)</span>
+              </li>
+              <li>
+                Air Crash Investigation{" "}
+                <span className="channel-metadata">(Discovery)</span>
+              </li>
             </ul>
           </div>
         </div>
