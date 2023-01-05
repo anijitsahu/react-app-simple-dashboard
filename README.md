@@ -15,6 +15,7 @@ It is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/
 
 This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
+
 ## Features
 
 1.  Code is rewritten with [React JS 18](https://reactjs.org/docs/getting-started.html)
@@ -50,6 +51,8 @@ This is a _responsive web application_ for viewing in both Mobile and Desktop.
 15. Mobile view is supported
 16. As it is a [Progressive Web Application(PWA)](https://web.dev/progressive-web-apps/) it supports features like **installability, offline load**  through *manifest.json and Service Worker*
 
+17. Some of Unit Test Cases are added using [Jest](https://jestjs.io/docs/getting-started) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) 
+
 ## Installation
 
 Clone the repository:
@@ -71,6 +74,11 @@ Now run the application
 
 ```bash
 $ npm start
+```
+
+```bash
+# Optional to run test cases
+$ npm test
 ```
 
 Open the `localhost:8080/` in a web browser
