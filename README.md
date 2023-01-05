@@ -64,7 +64,7 @@ $ git clone https://github.com/anijitsahu/react-app-simple-dashboard-page-pwa.gi
 Navigate inside the directory and install all the dependencies:
 
 ```bash
-$ cd react-app-simple-dashboard-page
+$ cd react-app-simple-dashboard-page-pwa
 
 # install dependencies
 $ npm install
