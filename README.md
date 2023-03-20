@@ -58,7 +58,7 @@ This is a _responsive web application_ for viewing in both Mobile and Desktop.
 Clone the repository:
 
 ```bash
-$ git clone https://github.com/anijitsahu/react-app-simple-dashboard-page-pwa.git
+$ git clone https://github.com/anijitsao/react-app-simple-dashboard-page-pwa.git
 ```
 
 Navigate inside the directory and install all the dependencies:
